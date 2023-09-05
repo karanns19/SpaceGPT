@@ -1,0 +1,36 @@
+<!--Header Section-->
+<div class="headerSection">
+    <div class="leftContent">
+        <h3>SpaceGPT</h3>
+    </div>
+    <div class="RightContent">
+        <ul>
+            <li id="1" (click)="changeTabs($event)" [style.color] = "componentId == 1 ? '#004785':'white'">Home</li>
+            <li id="2" (click)="changeTabs($event)" [style.color] = "componentId == 2 ? '#004785':'white'">Rocket Equation</li>
+            <li id="3" (click)="changeTabs($event)" [style.color] = "componentId == 3 ? '#004785':'white'">Light Year</li>
+            <li id="4" (click)="changeTabs($event)" [style.color] = "componentId == 4 ? '#004785':'white'">Interesting Facts</li>
+        </ul>
+    </div>
+</div>
+<!--Header Section-->
+
+<!--Main Section-->
+
+
+<!--Home Section-->
+<app-home *ngIf="componentId == 1"></app-home>
+<!--Home Section-->
+
+<!--Rocket Equation Section-->
+<app-rocket *ngIf="componentId == 2"></app-rocket>
+<!--Rocket Equation Section-->
+
+<!--Escape Velocity Section-->
+<app-escape *ngIf="componentId == 3"></app-escape>
+<!--Escape Velocity Section-->
+
+<!--Trivia Section-->
+<app-trivia *ngIf="componentId == 4"></app-trivia>
+<!--Trivia Section-->
+
+<!--Main Section-->

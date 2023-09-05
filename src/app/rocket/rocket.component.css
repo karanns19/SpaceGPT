@@ -1,0 +1,79 @@
+.rocketSection{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    border: 1px solid white;
+    box-shadow: 1px 1px white;
+    color: white;
+    padding: 2%;
+    text-align: center;
+}
+
+.row{
+    margin-top: 2%;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 2%;
+}
+
+button{
+    padding: 6px 14px;
+    background-color: transparent;
+    font-weight: 600;
+    color: white;
+    border: 1px solid white;
+    box-shadow: 1px 1px white;
+    margin-bottom: 2%;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 1px 1px black;
+}
+
+.Inputs{
+    width: 100%;
+    display: inline-block;
+}
+
+label{
+    width: 30%;
+    margin-bottom: 3%;
+    text-align: left;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+span{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+input{
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+}
+
+p{
+    margin-bottom: 3%;
+}
+
+@media (max-width: 426px){
+    h2{
+        font-size: 30px;
+    }
+
+    label{
+        width: 100%;
+        text-align: center;
+    }
+    input{
+        margin-bottom: 2%;
+    }
+}

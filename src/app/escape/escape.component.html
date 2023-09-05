@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sd-12">
+            <div class="escapeSection">
+                <h2>Light Year Calculation</h2>
+                <p>{{desc}}</p>
+                <div class="Inputs">
+                    <label for="">Speed of Light (m/s)</label>
+                    <input type="number" [(ngModel)]="this.sol"><br>
+                    <label for="">Time (s)</label>
+                    <input type="number" [(ngModel)]="this.time"><br>
+                    <button (click)="calculate()">Calculate</button><br>
+                    <span *ngIf="result">Result: Distance - {{distance}}(m)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

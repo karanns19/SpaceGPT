@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sd-12">
+            <div class="rocketSection">
+                <h2>Tsiolkovsky Rocket Equation</h2>
+                <p>{{desc}}</p>
+                <div class="Inputs">
+                    <label for="">Effective Exhaust Velocity (m/s) </label>
+                    <input type="number" [(ngModel)]="this.effVelo"><br>
+                    <label for="">Initial Mass (kg) </label>
+                    <input type="number" [(ngModel)]="this.InitialMass"><br>
+                    <label for="">Final Mass (kg) </label>
+                    <input type="number" [(ngModel)]="this.FinalMass"><br>
+                    <button (click)="calculate()">Calculate</button><br>
+                    <span *ngIf="result">Result - Change of Velocity - {{changeVelo}}(m/s)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
